@@ -1,14 +1,25 @@
 #include <iostream>
+#include <cmath> // Para usar a função sqrt
 using namespace std;
+
 int main()
 {
-    cout << "Digite um nÃºmero: ";
+    setlocale(LC_ALL, "portuguese");
+
+    cout << "Digite um número: ";
     int n;
     cin >> n;
 
-   int conta = n * n;
+    double raiz = sqrt(n);
 
-    cout << "O nÃºmero digitado vezes 2 foi: " << conta <<endl;
+    if (raiz == static_cast<int>(raiz))
+    {
+        cout << "A raiz quadrada de " << n << " é " << raiz << " e é exata." << endl;
+    }
+    else
+    {
+        cout << "A raiz quadrada de " << n << " é " << raiz << " e não é exata." << endl;
+    }
 
     return 0;
 }
