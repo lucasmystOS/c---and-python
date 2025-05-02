@@ -1,11 +1,14 @@
 #include <iostream>
-
+using namespace std;
 int main()
 {
-    std::cout << "Digite um número: ";
+    cout << "Digite um número: ";
     int n;
-    std::cin >> n;
-    std::cout << "O número digitado foi: " << n << std::endl;
+    cin >> n;
+
+   int conta = n * n;
+
+    cout << "O número digitado vezes 2 foi: " << conta <<endl;
 
     return 0;
 }
